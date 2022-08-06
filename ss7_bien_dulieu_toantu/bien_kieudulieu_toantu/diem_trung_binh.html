@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm Tổng và Trung bình</title>
+</head>
+<body>
+
+</body>
+<script>
+    diemvl = prompt("Điểm Vật Lý")
+    diemsh = prompt("Điểm Sinh Học")
+    diemhh = prompt("Điểm Hóa Học")
+    let vl = parseFloat(diemvl)
+    let sh = parseFloat(diemsh)
+    let hh = parseFloat(diemhh)
+    let dt = vl + sh + hh
+    let dtb = dt / 3
+    document.write("Điểm Tổng =" + dt)
+    document.write("     ")
+    document.write("Điểm Trung Bình = " + dtb )
+   alert("Điểm Trung Bình = " + dtb)
+    alert("Điểm Tổng = " + dt)
+</script>
+</html>
