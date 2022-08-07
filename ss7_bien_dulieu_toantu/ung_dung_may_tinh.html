@@ -5,7 +5,6 @@
     <title>Calculator</title>
 </head>
 <body>
-<form>
     <p><input type="text" id="1">
         <input type="text" id="2"></p>
 
@@ -13,40 +12,49 @@
     <button onclick="tru()">Subtraction(-)</button>
     <button onclick="nhan()">Multiplication(X)</button>
     <button onclick="chia()">Division(/)</button>
-</form>
+<p id="Result"></p>
+
 </body>
 <script>
 
     function cong() {
+        let Result;
         let o1 = document.getElementById("1").value;
         let o2 = document.getElementById("2").value;
         let p1 = parseFloat(o1)
         let p2 = parseFloat(o2)
-        alert("Kết quả là " + p1 + p2);
+        Result = (p1 + p2);
+        document.getElementById("Result").innerHTML =("Kết quả là: " + Result);
     }
 
     function tru() {
+        let Result;
         let o1 = document.getElementById("1").value;
         let o2 = document.getElementById("2").value;
         let p1 = parseFloat(o1)
         let p2 = parseFloat(o2)
-        alert("Kết quả là " + p1 - p2);
+        Result = (p1 - p2);
+        document.getElementById("Result").innerHTML = ("Kết quả là: " + Result);
     }
 
     function nhan() {
+        let Result;
         let o1 = document.getElementById("1").value;
         let o2 = document.getElementById("2").value;
         let p1 = parseFloat(o1)
         let p2 = parseFloat(o2)
-        alert("Kết quả là " + p1 * p2);
+        Result = (p1 * p2);
+        document.getElementById("Result").innerHTML = ("Kết quả là: " + Result);
     }
 
     function chia() {
+        let Result;
         let o1 = document.getElementById("1").value;
         let o2 = document.getElementById("2").value;
         let p1 = parseFloat(o1)
         let p2 = parseFloat(o2)
-        alert("Kết quả là " + p1 / p2);
+        Result = (p1 / p2);
+        document.getElementById("Result").innerHTML = ("Kết quả là: " + Result);
     }
 </script>
 </html>

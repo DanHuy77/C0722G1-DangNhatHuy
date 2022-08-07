@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c2d1ecd-b1c7-4ed9-ad02-a9fee3909561" name="Default Changelist" comment="" />
+    <list default="true" id="6c2d1ecd-b1c7-4ed9-ad02-a9fee3909561" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ung_dung_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ung_dung_may_tinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ungdung_chuyendoi_tiente.html" beforeDir="false" afterPath="$PROJECT_DIR$/ungdung_chuyendoi_tiente.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +45,7 @@
       <updated>1659792823366</updated>
       <workItem from="1659792824747" duration="1455000" />
       <workItem from="1659794328114" duration="12706000" />
+      <workItem from="1659843440906" duration="3021000" />
     </task>
     <servers />
   </component>
@@ -56,9 +61,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="379" y="101" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1659795521620" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1659806051232">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1659844450497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1659806051232" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1659844450497" />
   </component>
 </project>
