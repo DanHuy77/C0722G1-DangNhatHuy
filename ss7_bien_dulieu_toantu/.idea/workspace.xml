@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c2d1ecd-b1c7-4ed9-ad02-a9fee3909561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ung_dung_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ung_dung_may_tinh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ungdung_chuyendoi_tiente.html" beforeDir="false" afterPath="$PROJECT_DIR$/ungdung_chuyendoi_tiente.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,8 @@
       <updated>1659792823366</updated>
       <workItem from="1659792824747" duration="1455000" />
       <workItem from="1659794328114" duration="12706000" />
-      <workItem from="1659843440906" duration="3021000" />
+      <workItem from="1659843440906" duration="4613000" />
+      <workItem from="1659923732633" duration="102000" />
     </task>
     <servers />
   </component>
@@ -53,10 +53,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1659794290422">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1659923831301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1659794290422" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1659923831301" />
     <state x="379" y="101" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1659795521620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

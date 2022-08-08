@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập với cấu trúc if...else...if</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Tên Đăng Nhập</td>
+        <td><input oninput="nhapten()" id="name" type="text"></td>
+    </tr>
+    <tr>
+        <td>Mật Khẩu</td>
+        <td><input id="pass" type="password"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align: right">
+            <button id="enter" onclick="login()">Đăng Nhập</button>
+        </td>
+    </tr>
+</table>
+<p id="rq"></p>
+</body>
+<script>
+    function nhapten() {
+        tdn = document.getElementById("name").value;
+        if (tdn == "Admin") {
+            document.getElementById("rq").innerHTML = "Xin nhập mật khẩu"
+        }
+    }
+
+    function login() {
+        tdn = document.getElementById("name").value;
+        mk = document.getElementById("pass").value;
+        if (mk == "1")
+        {
+            document.getElementById("rq").innerHTML = "Welcome"
+        }
+        else if (tdn == ""){
+            document.getElementById("rq").innerHTML = "Canceled"
+        }
+        else if (mk == ""){
+            document.getElementById("rq").innerHTML = "Canceled"
+        }
+        else{
+            document.getElementById("rq").innerHTML = "I don't know you!"
+        }
+    }
+</script>
+</html>
