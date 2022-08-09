@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng cơ thể</title>
+</head>
+<body>
+<p>Chiều Cao <input type="text" id="height"> <span>m</span></p>
+<p>Cân Nặng <input type="text" id="weight"> <span>Kg</span></p>
+<p id="tinhtrang"></p>
+<button onclick="hienThi()">Check</button>
+</body>
+<script>
+    function hienThi() {
+        chieuCao = parseFloat(document.getElementById("height").value);
+        canNang = parseFloat(document.getElementById("weight").value);
+
+        let bmi = canNang / Math.pow(chieuCao, 2);
+        if (bmi < 18.5) {
+            document.getElementById("tinhtrang").innerHTML = "Underweight";
+        } else if (18.5 <= bmi < 25) {
+            document.getElementById("tinhtrang").innerHTML = "Normal";
+        } else if (25.5 <= bmi <= 30) {
+            document.getElementById("tinhtrang").innerHTML = "Overweight";
+        } else {
+            document.getElementById("tinhtrang").innerHTML = "Obese";
+        }
+    }
+</script>
+</html>
