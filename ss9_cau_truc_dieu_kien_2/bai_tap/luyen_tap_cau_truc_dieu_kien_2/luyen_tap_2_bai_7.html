@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseFloat(prompt("nhập số a"));
+    let b = parseFloat(prompt("nhập số b"));
+    let c = parseFloat(prompt("nhập số c"));
+    let del = b * b - 4 * a * c
+    if (del<0){alert("Phương trình vô nghiệm")}
+    else if(del>0){alert("x1,x2 =" + " "+(-b+Math.sqrt(del))/(2*a)+","+(-b-Math.sqrt(del))/(2*a))}
+    else {alert("x1=x2=" +" "+-b/2*a)}
+</script>
+</html>
+</html>

@@ -18,9 +18,9 @@
         let bmi = canNang / Math.pow(chieuCao, 2);
         if (bmi < 18.5) {
             document.getElementById("tinhtrang").innerHTML = "Underweight";
-        } else if (18.5 <= bmi < 25) {
+        } else if (18.5 <= bmi && bmi < 25) {
             document.getElementById("tinhtrang").innerHTML = "Normal";
-        } else if (25.5 <= bmi <= 30) {
+        } else if (25.5 <= bmi && bmi <= 30) {
             document.getElementById("tinhtrang").innerHTML = "Overweight";
         } else {
             document.getElementById("tinhtrang").innerHTML = "Obese";

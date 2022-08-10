@@ -5,12 +5,18 @@
     <title>Luyện tập cấu trúc Switch Case</title>
 </head>
 <body>
-
 </body>
 <script>
-    let numBer = prompt('Nhập số','0')
-    switch (numBer) {
-case '>0':
-    alert("1");}
+    var giaTri = parseInt(prompt('Nhập Số', 0));
+    switch ((giaTri > 0) ? 1 : (giaTri < 0) ? -1 : 0) {
+        case 1:
+            alert(1);
+            break
+        case -1:
+            alert(-1);
+            break
+        default:
+            alert(0);
+    }
 </script>
 </html>

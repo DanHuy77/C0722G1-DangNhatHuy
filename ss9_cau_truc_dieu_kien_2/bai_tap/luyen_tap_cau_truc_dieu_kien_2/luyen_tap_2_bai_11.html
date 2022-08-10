@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+
+</body>
+<script>
+    thuNhap = parseFloat(prompt("Thu nhập"));
+    let thueThuNhap
+    if (5000000 >= thuNhap) {
+        thueThuNhap = thuNhap * 5 / 100
+    } else if (thuNhap <= 10000000) {
+        thueThuNhap = thuNhap * 10 / 100
+    } else if (thuNhap <= 18000000) {
+        thueThuNhap = thuNhap * 15 / 100
+    } else if (thuNhap <= 32000000) {
+        thueThuNhap = thuNhap * 20 / 100
+    } else if (thuNhap <= 52000000) {
+        thueThuNhap = thuNhap * 25 / 100
+    } else if (thuNhap <= 80000000) {
+        thueThuNhap = thuNhap * 30 / 100
+    } else {
+        thueThuNhap = thuNhap * 35 / 100
+    }
+    alert(thueThuNhap);
+    </script>

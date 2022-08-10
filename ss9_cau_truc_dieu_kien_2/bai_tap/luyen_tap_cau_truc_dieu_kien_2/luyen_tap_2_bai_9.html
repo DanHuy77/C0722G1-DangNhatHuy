@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra cạnh tam giác</title>
+</head>
+<body>
+
+</body>
+<script>
+    x = parseFloat(prompt("nhập cạnh 1"));
+    y = parseFloat(prompt("nhập cạnh 2"));
+    z = parseFloat(prompt("nhập cạnh 3"));
+    if (x > 0 && y > 0 && z > 0){
+        if (x + y > z && x + z > y && y + z > x){
+            alert("x, y, z là 3 cạnh của tam giác");
+        }
+    }
+    else {
+        alert("x, y, z không phải là 3 cạnh của tam giác");
+    }
+</script>
+</html>

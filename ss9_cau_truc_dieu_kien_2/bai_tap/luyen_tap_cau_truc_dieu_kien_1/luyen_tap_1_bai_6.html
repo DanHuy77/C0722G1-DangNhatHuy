@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng theo doanh số bán hàng</title>
+</head>
+<body>
+
+</body>
+<script>
+    doanhThu = parseFloat(prompt("Doanh thu"));
+    let hoaHong;
+    if (doanhThu>100){
+hoaHong = doanhThu * 20 / 100
+    }
+    else if (doanhThu>=80){
+hoaHong = doanhThu * 15 / 100
+    }
+    else if (doanhThu>=60){
+        hoaHong = doanhThu * 10 / 100
+    }
+    else if (doanhThu>=20){
+        hoaHong = doanhThu * 5 / 100
+    }
+    else {
+        hoaHong = 0
+    }
+    alert("Tiền hoa hồng là " + hoaHong)
+</script>
+</html>

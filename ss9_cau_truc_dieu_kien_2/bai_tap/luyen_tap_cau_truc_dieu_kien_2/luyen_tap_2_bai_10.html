@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+
+</body>
+<script>
+    used = parseFloat(prompt("Nhập điện năng tiêu thụ"));
+    let donGiaDien
+
+    if (0 < used && used <= 50) {
+        donGiaDien = 1.484;
+    } else if (used <= 100) {
+        donGiaDien = 1.533;
+    } else if (used <= 200) {
+        donGiaDien = 1.786
+    } else if (used <= 300) {
+        donGiaDien = 2.242;
+    } else if (used <= 400) {
+        donGiaDien = 2.503;
+    } else {
+        donGiaDien = 2.587;
+    }
+    tienDien = used * donGiaDien
+    alert("Tiền điện: " + tienDien + "VND");
+</script>
+</html>

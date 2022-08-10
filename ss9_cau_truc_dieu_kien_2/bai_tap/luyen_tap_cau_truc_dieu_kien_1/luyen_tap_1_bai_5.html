@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+
+</body>
+<script>
+    baiKiemTra = parseFloat(prompt("Điểm bài kiểm tra"));
+    diemGiuaKy = parseFloat(prompt("Điểm thi giữa kỳ"));
+    diemCuoiKy = parseFloat(prompt("Điểm thi cuối kỳ"));
+    let diemXepHang = (baiKiemTra+diemGiuaKy+diemCuoiKy) / 3
+    if (diemXepHang >= 8){
+alert("Học sinh giỏi");
+    }
+    else if (diemXepHang >= 6.5){
+alert("Học sinh khá");
+    }
+    else if (diemXepHang>=5){
+alert("Học sinh trung bình");
+    }
+    else {
+        alert("Học sinh yếu");
+    }
+</script>
+</html>
