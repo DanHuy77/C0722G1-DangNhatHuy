@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh bảng cửu chương</title>
+</head>
+<body>
+
+</body>
+<script>
+    let doc, ngang, bang;
+    bang = "<table border = '1'>";
+    for (doc = 1; doc <=9; doc++){
+        bang = bang + "<tr>"
+        for (ngang =2; ngang <=8; ngang++){
+bang = bang + "<td>" + ngang + " x " + doc + " = " + ngang * doc + "</td>"
+        }
+        bang = bang + "</tr>"
+    }
+    bang = bang + "</table>"
+    document.write(bang);
+</script>
+</html>
