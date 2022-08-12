@@ -8,6 +8,21 @@
 <button type="button" onclick="choi()">Chơi</button>
 </body>
 <script>
-
+    function choi() {
+        let khoang = parseInt(prompt("Bạn muốn đoán trong khoảng nào?"));
+        let soNgauNhien = parseInt(Math.random() * khoang);
+        let soDoan = parseInt(prompt("Nhập vào số bạn đoán"));
+        for (i = 1; i <= 3; i++) {
+                if (soDoan < soNgauNhien) {
+                    alert("số vừa nhập nhỏ hơn")
+                    soDoan = +prompt("Nhập vào số bạn đoán")
+                } else if (soDoan > soNgauNhien) {
+                    alert("số vừa nhập lớn hơn")
+                    soDoan = +prompt("Nhập vào số bạn đoán")
+                } else if (soDoan == soNgauNhien){
+                    alert("Đúng!")
+                break}
+            }
+        }
 </script>
 </html>
