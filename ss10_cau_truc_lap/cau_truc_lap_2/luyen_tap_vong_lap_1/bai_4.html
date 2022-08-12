@@ -11,15 +11,15 @@
     let n1 = 0;
     let n2 = 1;
     let soKeTiep = 0;
-    for (i=0; ; i++ ) {
+    for (i=0; i < 20 ; i++ ) {
+        document.write(n1 + "<br>")
         soKeTiep = n2 + n1;
         n1 = n2;
         n2 = soKeTiep;
-        if (soKeTiep%5 === 0) {
-            alert(soKeTiep);
-            break;
+
+        if (n1 / 5 == 1) {
+            document.write("Số đầu tiên chia hết cho 5 = ");
         }
     }
-
 </script>
 </html>
