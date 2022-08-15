@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button type="button" onclick="tim()">Search</button>
+<p id="display"></p>
+</body>
+<script>
+    function tim() {
+        let eng = ['Code', 'Gym', 'Evelen', 'Floor'];
+        let vie = ['Mã', 'Phòng tập luyện', 'Số 11', 'Tầng'];
+        let e = document.getElementById("input").value;
+        let ketQua = ""
+        let index_eng = 0;
+        if (index_eng == -1) {
+            alert("Không tìm thấy!");
+        } else {
+            for (let i = 0; i < eng.length; i++) {
+                if (eng[i] == e) {
+                    index_eng = i;
+                }
+            }
+            for (let j = 0; j < vie.length; j++) {
+                if (index_eng == j) {
+                    ketQua = vie[j];
+                }
+            }
+            document.getElementById("display").innerHTML = ketQua;
+        }
+    }
+</script>
+</html>

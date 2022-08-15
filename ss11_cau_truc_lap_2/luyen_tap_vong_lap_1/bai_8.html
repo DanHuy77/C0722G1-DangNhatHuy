@@ -12,8 +12,11 @@
         let khoang = parseInt(prompt("Bạn muốn đoán trong khoảng nào?"));
         let soNgauNhien = parseInt(Math.random() * khoang);
         let soDoan = parseInt(prompt("Nhập vào số bạn đoán"));
-        for (let i = 1; i <= 3; i++) {
-            if (soDoan < soNgauNhien) {
+        for (let i = 1; i <= 4; i++) {
+            if (i === 4) {
+                alert("Hết lượt!")
+                break;
+            } else if (soDoan < soNgauNhien) {
                 alert("số vừa nhập nhỏ hơn");
                 soDoan = +prompt("Nhập vào số bạn đoán");
             } else if (soDoan > soNgauNhien) {

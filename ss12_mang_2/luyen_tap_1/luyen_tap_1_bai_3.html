@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<p id="display"></p>
+</body>
+<script>
+    let mangSoNguyen = [1, 2, 3, 4, 5, 10, 15, 20, 30, 40, 50, 60];
+    let max = 0;
+    let sum = 0;
+    for (let i = 0; i < mangSoNguyen.length; i++){
+        if (mangSoNguyen[i] > max){
+            max = mangSoNguyen[i];
+        }
+    }
+    for (let j = 0; j <mangSoNguyen.length; j++){
+        sum += mangSoNguyen[j];
+    }
+    document.getElementById("display").innerHTML = "Giá trị lớn nhất là: " + max + ", " + "Giá trị trung bình của các phần tử là: " + sum /12
+</script>
+</html>

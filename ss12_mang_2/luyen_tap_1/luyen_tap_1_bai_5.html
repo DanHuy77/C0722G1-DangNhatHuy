@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h4>Phương trình đếm số nguyên âm trong 1 chuỗi</h4>
+</body>
+<script>
+    let coSoNguyenAm = [-10, -9, -8, -7, -6, -5, - 4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let count = 0
+    for (let i = 0; i < coSoNguyenAm.length; i++){
+        if (coSoNguyenAm[i] < 0){
+            count++
+        }
+    }
+    document.write("Số lượng số nguyên âm: " + count);
+</script>
+</html>

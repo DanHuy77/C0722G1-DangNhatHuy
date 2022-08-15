@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu -</title>
+</head>
+<body>
+
+</body>
+<script>
+    // const daySo = [0, 2, 5, 4, 6, 8];
+    // const daySoMoi = daySo.toString();
+    // const ketQua = [daySoMoi[0]];
+    // for (let i = 1; i < daySoMoi.length; i++){
+    //     if ((daySoMoi[i] % 2 === 0) && (daySoMoi[i-1] % 2 ===0)){
+    //         ketQua.push["-", daySoMoi[i]];
+    //     } else {
+    //         result.push(daySoMoi[i]);
+    //     }
+    // }
+    // document.write(ketQua.join(""));
+
+    const num = window.prompt();
+    const str = num.toString();
+    const result = [str[0]];
+
+    for (let x = 1; x < str.length; x++) {
+        if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+            result.push('-', str[x]);
+        } else {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</html>

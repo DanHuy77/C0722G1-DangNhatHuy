@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="input">
+<button type="button" onclick="tim()">Search</button>
+<p id="display"></p>
+</body>
+<script>
+    function tim() {
+        let eng = ["Code", "Gym", "Eleven", "Floor"];
+        let vie = ["Mã", "Phòng tập luyện", "Số 11", "Tầng"];
+        let e = document.getElementById("input").value;
+        let index_eng = -10;
+        for (let i = 0; i < eng.length; i++) {
+            if (e == eng[i]) {
+                index_eng = i;
+            }
+        }
+        if(index_eng == -10){
+            document.getElementById("display").innerHTML = "Không có!";
+        } else {
+            document.getElementById("display").innerHTML = vie[index_eng]
+        }
+    }
+</script>
+</html>
