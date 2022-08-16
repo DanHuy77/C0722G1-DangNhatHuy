@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = prompt("Kích thước mảng");
+    let arrK = [];
+    for (i = 0; i < x; i++){
+        arrK[i] = prompt("Nhập vào các ký tự có chứa -");
+    }
+    for (j = 0; j < arrK.length; j++){
+        if (arrK[j] == "-"){
+            arrK.splice(j,1,"_");
+        }
+    }
+    document.write(arrK.join(''));
+</script>
+</html>
