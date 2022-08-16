@@ -8,6 +8,26 @@
 
 </body>
 <script>
-    khó quá
+    let mang = [0, 1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10];
+    let V = parseInt(prompt("Nhập số"));
+    let count = 0
+    for (let i = 0; i < mang.length; i++) {
+        if (V == mang[i]) {
+            count++
+            for (let j = i; j < mang.length - 1; j++) {
+                mang[j] = mang[j + 1];
+            } mang[mang.length - 1] = 0;
+            i--
+        }
+    }
+        document.write(mang);
+        if (count !== 0) {
+            document.write(" Số nằm trong mảng")
+        } else {
+            document.write(" Số không nằm trong mảng")
+        }
+
+
+
 </script>
 </html>
