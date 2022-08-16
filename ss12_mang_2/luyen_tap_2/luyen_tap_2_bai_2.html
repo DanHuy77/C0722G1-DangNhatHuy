@@ -8,11 +8,15 @@
 
 </body>
 <script>
-    let a = new Array ('c', 's', 'c', '2', '6', '1');
-    a.sort()
-    // a.sort(function (a, b) {
-    //     return a - b;
-    // })
-    document.write(a);
+    let Array = ['c', 's', 'c', '2', '6', '1']
+    let x = 0;
+    let y = Array.length - 1
+    for(let i = 0; i < Array.length/2; i++){
+        let b = Array[x];
+        Array[x] = Array[y - i];
+        Array[y-i] = b
+        x++;
+    }
+    document.write(Array.join(""));
 </script>
 </html>

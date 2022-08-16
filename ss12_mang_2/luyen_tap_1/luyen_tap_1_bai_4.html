@@ -8,7 +8,11 @@
 
 </body>
 <script>
-    let mangSoNguyen = [1, 2, 3, 4, 5, 10];
+    let x = +prompt("Nhập chiều dài mảng")
+    let mangSoNguyen = []
+    for (let i = 0; i < x; i++) {
+        mangSoNguyen[i] = +prompt("Nhập các số trong mảng")
+    }
     let dau = 0;
     let cuoi = mangSoNguyen.length - 1;
     while (dau < cuoi) {

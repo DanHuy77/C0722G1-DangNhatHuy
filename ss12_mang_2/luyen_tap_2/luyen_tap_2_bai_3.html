@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = prompt("Kích thuớc mảng ký tự");
+    let arr = [];
+    let count = 0;
+    for (i = 0; i < x; i++) {
+        arr[i] = +prompt("Nhập ký tự");
+    }
+    for (let j = 0; j < x; j++) {
+        if (arr[j] % 1 == 0) {
+            count++;
+        }
+    }
+    document.write("Số ký tự số trong chuỗi: " + count);
+</script>
+</html>
