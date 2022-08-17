@@ -15,7 +15,7 @@
     }
     for (j = 0; j < arrK.length; j++){
         if (arrK[j] == "-"){
-            arrK.splice(j,1,"_");
+            arrK[j] = "_";
         }
     }
     document.write(arrK.join(''));

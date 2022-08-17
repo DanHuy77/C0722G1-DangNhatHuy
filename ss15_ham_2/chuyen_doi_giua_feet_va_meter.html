@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meter</title>
+</head>
+<body>
+<span><input type="number" id="input"></span> <span><button onclick="footToMeter()">Foot to meter</button></span>
+<span><button onclick="meterToFoot()">Meter to foot</button></span>
+<p id="output"></p>
+</body>
+<script>
+    function footToMeter() {
+        let foot = document.getElementById("input").value;
+        let met = 0.305 * foot;
+        document.getElementById("output").innerHTML = "= " + met + " m";
+    }
+
+    function meterToFoot() {
+        let met2 = document.getElementById("input").value;
+        let foot2 =  3.279 * met2;
+        document.getElementById("output").innerHTML = "= " + foot2 + " feet"
+    }
+</script>
+</html>

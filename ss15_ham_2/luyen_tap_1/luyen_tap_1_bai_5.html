@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1 Bài 5</title>
+</head>
+<body>
+<script>
+    let arrK1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrK2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let star = prompt("Nhập tên sao");
+    let index_arr = -1;
+
+    function searchFor(a, b) {
+        for (let i = 0; i < a.length; i++) {
+            if (star == a[i]) {
+                index_arr = i;
+            }
+        }
+        if (index_arr == -1) {
+            alert("Không tìm thấy ngôi sao nào!");
+        } else {
+            alert(b[index_arr]);
+        }
+    }
+
+    searchFor(arrK1, arrK2);
+
+</script>
+</body>
+
+</html>

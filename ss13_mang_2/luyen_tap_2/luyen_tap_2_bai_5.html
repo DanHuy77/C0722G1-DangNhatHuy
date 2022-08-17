@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    let doc1 = prompt("nhập chuỗi 1:");
+    let doc2 = prompt("nhập chuỗi 2:");
+    let count = 0;
+    if (doc1.length != doc2.length) {
+        document.write('2 chuỗi không giống nhau');
+    } else {
+        for (let i = 0; i < doc1.length; i++) {
+            if (doc1[i] == doc2[i]) {
+                count++
+            }else {
+                document.write('2 chuỗi không giống nhau');
+                break;
+            }
+        }
+    }
+    if(count==doc1.length) {
+        document.write('2 chuỗi giống nhau');
+    }
+</script>
+</html>

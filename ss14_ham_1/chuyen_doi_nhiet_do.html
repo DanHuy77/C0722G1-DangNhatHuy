@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<p><span>Độ F </span><span><input type="number" oninput="Convert(this.value)"></span></p>
+<p><span>Độ C </span> <span id="output"></span></p>
+</body>
+<script>
+    function Convert(doF) {
+        doF = parseFloat(doF);
+document.getElementById("output").innerHTML = (doF - 32) / 1.8;
+    }
+</script>
+</html>

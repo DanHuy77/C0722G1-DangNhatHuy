@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất</title>
+</head>
+<body>
+
+</body>
+<script>
+    function findMin(arr) {
+        let min = arr[0]
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min
+    }
+    let arr1 = [3, 5, 1, 8, -3, 7, 8]
+    let min = findMin(arr1);
+    alert(min)
+</script>
+</html>
