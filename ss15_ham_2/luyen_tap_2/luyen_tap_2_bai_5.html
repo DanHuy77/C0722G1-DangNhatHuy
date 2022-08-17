@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 Bài 5</title>
+</head>
+<body>
+<!--Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+</body>
+<script>
+    let num1 = +prompt("Nhập số thứ nhất");
+    let num2 = +prompt("Nhập số thứ hai");
+    let num3 = +prompt("Nhập số  thứ ba");
+
+    function findMin(num1, num2, num3) {
+        if (num1 < num2 && num1 < num3) {
+            alert("Số nhỏ nhất là: " + num1);
+        } else if (num2 < num3) {
+            alert("Số nhỏ nhất là: " + num2);
+        } else {
+            alert("Số nhỏ nhất là: " + num3);
+        }
+    }
+    findMin(num1, num2, num3);
+</script>
+</html>

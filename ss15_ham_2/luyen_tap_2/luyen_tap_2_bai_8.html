@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 Bài 8</title>
+</head>
+<body>
+<!--Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.?-->
+<script>
+
+    let size = prompt("Nhập kích thước mảng");
+    let arrK47 = [];
+    function insertArr(sizex,arrx){
+        for (let i = 0; i < sizex; i++) {
+            arrx[i] = prompt("Nhập các phần tử trong mảng");
+        }
+        let first = 0;
+        let last = arrx.length - 1;
+        for (let j = 0; j < sizex / 2; j++){
+        let middleX = arrx[first];
+        arrx[first] = arrx[last - j];
+        arrx[last - j] = middleX;
+            first++
+        }
+    alert(arrx);
+    }
+    insertArr(size, arrK47)
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 Bài 3</title>
+</head>
+<body>
+<script>
+    let soNguyenDuong = +prompt("Nhập số nguyên dương");
+    function giaiThua(soNguyen) {
+        let i = soNguyen - 1;
+        do {
+          soNguyen = soNguyen * i;
+            i--;
+        } while (i > 1);
+    alert("Giai thừa của số nguyên vừa nhập: " + soNguyen);
+    }
+
+    giaiThua(soNguyenDuong);
+</script>
+</body>
+</html>

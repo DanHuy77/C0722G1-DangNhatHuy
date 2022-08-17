@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2 Bài 2</title>
+</head>
+<body>
+
+</body>
+<script>
+    let radiusx = +prompt("Nhập bán kính hình tròn");
+
+    function cirArea(radius) {
+        let circleArea = Math.pow(radius, 2) * Math.PI;
+        return circleArea;
+    }
+
+    function cirPeri(radius) {
+        let circlePerimeter = 2 * radius * Math.PI;
+        return circlePerimeter;
+    }
+    alert("Diện tích hình tròn là: " + cirArea(radiusx));
+    alert("Chu vi hình tròn là: " + cirPeri(radiusx));
+
+</script>
+</html>
