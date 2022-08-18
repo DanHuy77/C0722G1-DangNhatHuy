@@ -9,12 +9,11 @@
 <!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
 </body>
 <script>
-    let sizeCb = '';
-    let numCb = 0;
+
+    let numCb = +prompt("Nhập vào 1 số bất kỳ")
+    let sizeCb = +prompt("Nhập kích thước mảng")
 
     function checkIf(size, num) {
-        num = +prompt("Nhập 1 số bất kỳ");
-        size = +prompt("Nhập vào kích thước mảng");
         let arr = [];
         let count = 0;
         for (let j = 0; j < size; j++) {

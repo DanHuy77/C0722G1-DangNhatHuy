@@ -10,15 +10,15 @@
 <p id="output"></p>
 </body>
 <script>
-    function footToMeter() {
-        let foot = document.getElementById("input").value;
+    function footToMeter(foot) {
+        foot = document.getElementById("input").value;
         let met = 0.305 * foot;
         document.getElementById("output").innerHTML = "= " + met + " m";
     }
 
-    function meterToFoot() {
-        let met2 = document.getElementById("input").value;
-        let foot2 =  3.279 * met2;
+    function meterToFoot(met) {
+        met = document.getElementById("input").value;
+        let foot2 =  3.279 * met;
         document.getElementById("output").innerHTML = "= " + foot2 + " feet"
     }
 </script>

@@ -12,11 +12,12 @@
     let num2 = +prompt("Nhập số thứ hai");
 
     function swapPosition(num1, num2) {
-        alert("Số thứ nhất là: " + num2);
-        alert("Số thứ hai là: " + num1);
-        // var num = num1;
-        // num1 = num2;
-        // num2 = num;
+        if (num1 !== num2) {
+            let num = num1;
+            num1 = num2;
+            num2 = num;
+        }
+    alert("Số 1: " + num1 + " Số 2: " + num2)
     }
 
     swapPosition(num1, num2)
