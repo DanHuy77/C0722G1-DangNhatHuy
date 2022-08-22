@@ -17,13 +17,12 @@
         }
 
         areaCal() {
-            let area = this.length * this.width;
-            alert("Diện tích hình chữ nhật: " + area)
+            return this.length * this.width;
         }
 
         periCal() {
-            let peri = (this.length + this.width) * 2;
-            alert("Chu vi hình chữ nhật: " + peri)
+         return (this.length + this.width) * 2
+
         }
 
         recDraw() {
@@ -37,11 +36,10 @@
 
     let rec = new Rectangle(10, 10, 100, 50);
     rec.recDraw();
-    rec.areaCal();
-    rec.periCal();
+    alert(rec.areaCal());
+    document.write("Chu vi hình chữ nhật: " + rec.periCal());
     let rec1 = new Rectangle(100, 100, 200, 150);
     rec1.recDraw();
-    rec1.areaCal();
-    rec1.periCal();
+
 </script>
 </html>

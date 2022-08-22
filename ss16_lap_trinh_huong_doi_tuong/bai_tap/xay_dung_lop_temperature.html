@@ -28,17 +28,17 @@
         }
 
         fTempCal() {
-            let fTemp = this.cTemp * 1.8 + 32;
-            document.write("Độ F: " + fTemp + "<br>");
+           return this.cTemp * 1.8 + 32;
+
         }
 
         kTempCal() {
-            let kTemp = this.cTemp + 273.15;
-            document.write("Độ K: " + kTemp)
+         return this.cTemp + 273.15;
+
         }
     }
     let temp1 = new Temperature(25);
-    temp1.fTempCal();
-    temp1.kTempCal()
+    document.write("Độ F: " + temp1.fTempCal());
+    document.write("Độ K: " + temp1.kTempCal());
 </script>
 </html>
