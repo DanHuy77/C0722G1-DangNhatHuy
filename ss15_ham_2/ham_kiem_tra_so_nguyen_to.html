@@ -8,20 +8,31 @@
 
 </body>
 <script>
-    let count = 0;
+    let check = true;
     let number = +prompt("Nhập số cần kiểm tra");
 
-    function Check() {
-        for (let i = 2; i <= Math.sqrt(number); i++)
-            if (number % i == 0) {
-                count++;
-            }
-        if (count == 0) {
-            alert("Là số nguyên tố");
+    function Check(number) {
+        if (number < 2) {
+            check = false;
+        }
+        if (number === 2) {
+            check = true;
+        } else if (number % 2 === 0) {
+            check = false;
         } else {
+            for (let i = 2; i < number; i++)
+                if (number % i === 0) {
+                    check = false;
+                    break;
+                }
+        }
+        if (check === false) {
             alert("Không phải số nguyên tố");
+        } else {
+            alert("Là số nguyên tố");
         }
     }
+
     Check(number)
 </script>
 </html>

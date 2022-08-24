@@ -32,17 +32,12 @@
             this.lamp = lamp;
         }
 
-        connectToLamp(ElectricLamp) {
-            return this.lamp = ElectricLamp;
-        }
         switchOff(){
             this.lamp.status = "Off"
-            return this.status;
 
         }
         switchOn(){
             this.lamp.status = "On";
-            return this.status;
         }
     }
     let electricLamp = new ElectricLamp("Off");
@@ -56,6 +51,5 @@
     alert(electricLamp.getStatus());
     lampSwitch.switchOff();
     alert(electricLamp.getStatus());
-
 </script>
 </html>
