@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<!--Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm. -->
+<!--Ký tự là bất kỳ được nhập từ bàn phím. -->
+<!--Các ký tự nguyên âm bao gồm: 'o', 'u', 'i', 'a', 'e' hoặc 'O', 'U', 'I', 'A', 'E'-->
+</body>
+<script>
+    let kiTu = prompt("Nhập ký tự");
+    let mangNguyenAm = ['o', 'u', 'i', 'a', 'e','O', 'U', 'I', 'A', 'E' ];
+    let check = false;
+    for (let i = 0; i < mangNguyenAm.length; i++){
+        if (kiTu === mangNguyenAm[i]){
+            check = true;
+        }
+    }
+    if (check === false){
+        alert("Ký tự vừa nhập là phụ âm");
+    }
+    else {
+        alert("Ký tự vừa nhập là nguyên âm");
+    }
+</script>
+</html>

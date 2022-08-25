@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu quán nước</title>
+</head>
+<body>
+<!--Giả sử menu của chúng ta có các loại thức uống như sau:-->
+<!--Cafe-->
+<!--Cam vắt-->
+<!--Nước ép cà rốt-->
+<!--Nước ép cà chua-->
+<!--Nước lọc-->
+<!--Nước dừa-->
+<!--Viết một chương trình gọi thức uống đơn giản.-->
+<!--Gợi ý: Trước tiên in ra màn hinh danh sách các loại thức uống cho người dùng chọn lựa-->
+<!--Đánh dấu theo thứ tự 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)-->
+<!--Khi người dùng lựa chọn 1 trong số các thức uống, chương trình sẽ hiện đơn giá của thức uống đó và cho phép người dùng nhập số lượng.
+    Cuối cùng hiển thị tổng số tiền người dùng cần phải trả.-->
+<!--Sử dụng vòng lặp do while lặp lại cho người dùng đặt thức uống, kết thúc quá trình đặt thức uống khi người nhấn số 7-->
+<p>
+    <span><button value="15000" onclick="add(countCafe,1,'Cafe')">1</button></span>
+    <span name="drink">Cafe</span>
+    <span><button onclick="inc(countCafe)">+</button></span>
+    <span><button onclick="dec(countCafe)">-</button></span>
+</p>
+<p>
+    <span><button value="20000" onclick="add(countCamVat,2, 'Cam Vắt')">2</button> </span>
+    <span name="drink">Cam Vắt</span>
+</p>
+<p>
+    <span><button value="20000" onclick="add(countCaRot,3, 'Nước ép cà rốt')">3</button> </span>
+    <span name="drink">Nước ép cà rốt</span>
+</p>
+<p>
+    <span><button value="20000" onclick="add(countCaChua,4,'Nước ép cà chua')">4</button> </span>
+    <span name="drink">Nước ép cà chua</span>
+</p>
+<p>
+    <span><button value="10000" onclick="add(countNuocLoc,5,'Nước lọc')">5</button> </span>
+    <span name="drink">Nước lọc</span>
+</p>
+<p>
+    <span><button value="20000" onclick="add(countNuocDua,6,'Nước dừa')">6</button> </span>
+    <span name="drink">Nước dừa</span>
+</p>
+<p>
+    <span><button onclick="stop()">Kết thúc</button></span>
+</p>
+<p>
+    <span id="display1"></span>
+    <span id="display2"></span></p>
+
+<p>
+    <span>Tổng</span> <span id="display3"></span>
+</p>
+</body>
+<script>
+    let menu = document.getElementById("display1")
+    let countCafe = 1;
+    let countCamVat = 1;
+    let countCaRot = 1;
+    let countCaChua = 1;
+    let countNuocLoc = 1;
+    let countNuocDua = 1;
+
+    let arrDrinkPrice = {
+        1: 15000,
+        2: 20000,
+        3: 20000,
+        4: 20000,
+        5: 10000,
+        6: 15000,
+    }
+
+    function inc(count) {
+        count++
+    }
+
+    function dec(count) {
+        count--
+    }
+
+    function add(count, value, name) {
+        menu.innerHTML = name + " x " + count + " = " + arrDrinkPrice[value];
+    }
+
+
+</script>
+</html>

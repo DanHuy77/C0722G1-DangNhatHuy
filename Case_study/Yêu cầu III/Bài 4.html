@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let mangChu = {
+        0: "Không",
+        '-': "-",
+        1: "Một",
+        2: "Hai",
+        3: "Ba",
+        4: "Bốn",
+        5: "Năm",
+        6: "Sáu",
+        7: "Bảy",
+        8: "Tám",
+        9: "Chín"
+    }
+    let soNguyen = prompt("Nhập 1 số vào đây");
+
+    function inRa(number) {
+        number = number.toString();
+        let stringNumber = '';
+        for (let i = 0; i < number.length; i++) {
+            stringNumber = stringNumber + mangChu[number[i]] + ' ';
+        }
+        return stringNumber;
+    }
+    alert(inRa(soNguyen));
+</script>
+</html>

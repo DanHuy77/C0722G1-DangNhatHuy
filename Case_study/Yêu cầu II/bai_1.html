@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lương nhân viên</title>
+</head>
+<body>
+
+</body>
+<script>
+    let grossSalary = prompt("Nhập số tiền lương");
+    let netSalary;
+    if (grossSalary == 15000000){
+        netSalary = grossSalary - (grossSalary * 20 / 100);
+    }
+    else if (grossSalary >= 7000000){
+        netSalary = grossSalary - (grossSalary * 10 / 100);
+    }
+    else {
+        netSalary = grossSalary - (grossSalary * 5 / 100);
+    }
+    alert(netSalary);
+</script>
+</html>
