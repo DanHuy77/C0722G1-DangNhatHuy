@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+
+</body>
+<script>
+    let name = prompt("nhập kí tự");
+
+    function convert (name) {
+        let rightForm = name.toLowerCase().split(" ");
+
+        for (let i = 0; i < rightForm.length; i++) {
+            rightForm[i] = rightForm[i][0].toUpperCase() + rightForm[i].slice(1);
+        }
+        document.write(rightForm.join(" "));
+    }
+
+    convert(name);
+</script>
+</html>

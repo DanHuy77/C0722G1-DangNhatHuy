@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<!--Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều-->
+</body>
+<script>
+    let mangHaiChieu = [[6, 2, 3], [4, 5, 1]];
+
+    function findMin(array) {
+        let number = 0;
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                number = array[i][j];
+                if (number < min){
+                    min = number;
+                }
+            }
+        }
+    document.write("Số nhỏ nhất: " + min);
+    }
+
+    function findMax(array) {
+        // let number1 = 0;
+        let max = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                // number1 = array [i][j];
+                if (array[i][j] > max){
+                    max = array[i][j];
+                }
+            }
+        }
+        document.write("Số lớn nhất: " + max);
+    }
+    findMin(mangHaiChieu);
+    document.write("<br>");
+    findMax(mangHaiChieu);
+</script>
+</html>

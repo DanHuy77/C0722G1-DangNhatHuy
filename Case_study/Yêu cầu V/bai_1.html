@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<!--Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím.-->
+</body>
+<script>
+    let m = +prompt("Nhập kích thước mảng cha");
+    let n = +prompt("Nhập kích thước mảng con");
+    let twoWayArr = [];
+    let sum = 0;
+    function evenNumSum(m,n) {
+
+        for (let i = 0; i < m; i++) {
+            twoWayArr[i] = [];
+            for (let j = 0; j < n; j++) {
+                twoWayArr[i][j] = +prompt("Nhập các phần tử mảng 2 chiều");
+                if (twoWayArr[i][j] % 2 === 0) {
+                    sum = sum + twoWayArr[i][j];
+                }
+            }
+        }
+    document.write("Tổng các số chẵn trong ma trận: " + sum);
+    }
+    evenNumSum(m,n);
+</script>
+</html>
