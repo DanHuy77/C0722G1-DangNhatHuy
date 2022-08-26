@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhập độ dài mảng");
+    let array = [];
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("Nhập các phần tử mảng");
+    }
+
+    document.write("Mảng sau khi nhập " + array);
+
+    for (let j = 0; j < array.length; j++){
+        array[j] = array[j].toString();
+        if (array[j].charAt(1) > array[j].charAt(0) ){
+        alert("Phần tử có hàng đơn vị lớn hơn hàng chục" + array[j])
+        }
+    }
+// let emptyArr = [];
+//     let array = [11, 12, 21, 56, 19];
+//     for (let i = 0; i < array.length; i++) {
+//         let a = parseInt(array[i] / 10);
+//         let b = array[i] % 10;
+//         if (b > a){
+//         emptyArr.push(array[i]);
+//         }
+//     }
+//     alert(emptyArr);
+
+</script>
+</html>

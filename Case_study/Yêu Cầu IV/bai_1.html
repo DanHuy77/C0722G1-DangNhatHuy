@@ -8,17 +8,63 @@
 
 </body>
 <script>
-    let name = prompt("nhập kí tự");
-
-    function convert (name) {
-        let rightForm = name.toLowerCase().split(" ");
-
-        for (let i = 0; i < rightForm.length; i++) {
-            rightForm[i] = rightForm[i][0].toUpperCase() + rightForm[i].slice(1);
+    function checkSpace(arrs) {
+        for(let i = 0; i< arrs.length; i++){
+            if(arrs[i] ==" " && arrs[i+1] == " "){
+                arrs.splice((i),1);
+                // i--;
+            }
         }
-        document.write(rightForm.join(" "));
+        return arrs;
+    }
+    function fixUpperLower(arrs) {
+        let result = "";
+        result += arrs[0].toUpperCase();
+        for(let i=1; i<arrs.length; i++){
+            if(arrs[i-1] == " "){
+                result += arrs[i].toUpperCase();
+            }
+            else {
+                result += arrs[i].toLowerCase();
+            }
+        }
+        return result;
+    }
+    function findMax(arrs) {
+        let max = [];
+        let remember ="";
+        for(let i =0;i<arrs.length;i++){
+            if(arrs[i] == " "){
+                max.push(remember);
+                remember = "";
+                continue;
+            }
+            else {
+                remember += arrs[i];
+            }
+        }
+        max.push(remember);
+        let maxcharac = max[0];
+        for(let k =0; k<max.length;k++){
+            if(max[k].length > maxcharac.length){
+                maxcharac = max[k];
+            }
+
+        }
+        return maxcharac;
     }
 
-    convert(name);
+    function main() {
+        let arrs = prompt("Nhập chuỗi: ");
+        document.write("Chuỗi trước xử lý: "+arrs+"<br>");
+        arrs =  arrs.toString().split();
+        arrs =  checkSpace(arrs);
+        arrs = arrs.toString();
+        let result =  fixUpperLower(arrs);
+        let result2 = findMax(result);
+        document.write("Chuỗi sau xử lý: "+result+"<br>");
+        document.write("Ký tự dài nhất trong xâu là: "+result2);
+    }
+    main()
 </script>
 </html>
