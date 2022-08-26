@@ -34,15 +34,16 @@
         let count = 0;
         for (let i = 0; i < array.length; i++) {
             for (let j = 0; j < array[i].length; j++) {
-        let num = array[i][j];
-                if (checkNum(num) === true){
+                let num = array[i][j];
+                if (checkNum(num) === true) {
                     document.write(num + "<br>");
-                count++;
+                    count++;
                 }
             }
         }
-    document.write("Số lượng snt: " + count);
+        document.write("Số lượng snt: " + count);
     }
+
     checkArray(array);
 </script>
 </html>
