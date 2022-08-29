@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = prompt("Nhập 1 chuỗi bất kỳ")
+
+    function convert(str) {
+        let flag = false;
+        let emptyArr = [];
+        let arrStr = str.split(' ');
+        for (let i = 0; i < arrStr.length; i++) {
+            if (arrStr.length === 1) {
+                flag = false;
+            } else {
+                flag = true;
+            }
+        }
+        if (flag === true) {
+            for (let j = 0; j < arrStr.length; j++) {
+                arrStr[j] = arrStr[j].toString();
+                emptyArr.push(arrStr[j].charAt(0));
+            }
+            alert(emptyArr.join('').toUpperCase());
+        } else {
+            alert("Chuỗi chỉ có 1 từ nên không cần viết tắc");
+        }
+
+    }
+    convert(str);
+</script>
+</html>

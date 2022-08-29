@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numStr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "/"];
+    let year = prompt("Nhập ngày tháng năm");
+    let yearCheck = [];
+
+    function checkIfNumber(year) {
+        for (let i = 0; i < year.length; i++) {
+            if (!numStr.includes(year[i])) {
+                return false;
+            }
+        }
+    }
+
+    function checkLimit(year) {
+        let arrDay = [];
+        let arrMonth = [];
+        arrDay.push(year[0], year[1]);
+        arrMonth.push(year[3], year[4]);
+        let numDay = parseInt(arrDay.join(''));
+        let numMonth = parseInt(arrMonth.join(''));
+        if (numDay > 31 || numMonth > 12) {
+            return false;
+        }
+    }
+
+    function checkPoi(year) {
+        let arrYear = year.split('');
+
+        for (let i = 0; i < arrYear.length; i++) {
+            if (arrYear[i + 2] !== "/" && arrYear[i + 5] !== "/" && arrYear.length !== 10) {
+                return false;
+            }
+        }
+    }
+
+    function totalCheck(year) {
+        if (checkIfNumber(year) === false || checkLimit(year) === false || checkPoi(year) === false) {
+            return false;
+        }
+    }
+
+    while (year !== "") {
+        if (totalCheck(year) === false) {
+            year = prompt("Yêu cầu nhập đúng định dạng");
+        } else {
+            year = year.split('');
+            yearCheck.push(year[6], year[7], year[8], year[9])
+            break;
+        }
+    }
+    let number = parseInt(yearCheck.join(''));
+
+    function secondCheck(number) {
+        if ((number % 4 === 0 && number % 100 !== 0 && number % 400 !== 0) || (number % 100 === 0 && number % 400 === 0)) {
+            return number + " là năm nhuận";
+        } else {
+            return number + " không phải là năm nhuận";
+        }
+    }
+
+    alert(secondCheck(number));
+</script>
+</html>

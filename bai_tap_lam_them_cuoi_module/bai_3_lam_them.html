@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+    let emptyArr = []
+    let size = +prompt("Nhập kích thước mảng");
+    for (let i = 0; i < size; i++) {
+        emptyArr[i] = +prompt("Nhập các phần tử mảng");
+    }
+
+    function fiPrint(number) {
+        let fibonacci = [];
+        let num1 = 0;
+        let num2 = 1;
+        let num3;
+        for (let i = 0; num1 <= number; i++) {
+            fibonacci.push(num1);
+            num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+
+
+        }
+        return fibonacci;
+    }
+
+    function findMax(array) {
+        let max;
+        for (let i = 0; i < array.length; i++) {
+            max = array[0];
+            if (array[i] > max) {
+                max = array[i]
+            }
+        }
+        return max;
+    }
+
+    // let max = findMax(emptyArr);
+    // let arrFi = fiPrint(max);
+
+    function includeCheck(array) {
+        let emptyArr1 = [];
+        for (let i = 0; i < array.length; i++) {
+            if (fiPrint(findMax(emptyArr)).includes(array[i])) {
+                emptyArr1.push(array[i]);
+            }
+        }
+        return emptyArr1.sort(function (a, b) {
+            return a - b
+        }).toString();
+    }
+
+    alert(includeCheck(emptyArr));
+</script>
+</html>
